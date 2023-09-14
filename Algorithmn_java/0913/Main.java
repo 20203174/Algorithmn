@@ -13,18 +13,15 @@ public class Main {
         //큰 수를 작은수로 나눈다
         //나온 나머지로 작은수를 나눈다.
         //나온 나머지로 아까 나머지를 나눈다.
-        int remainder = 0;
+        if (second == 0){
+            return first;
+        }
         if(first < second) {
-            int tmp = first; 
+            int tmp = first;
             first = second;
             second = tmp;
         }
-
-        while((remainder = first % second) != 0) {
-            first = second;
-            second = remainder;
-        }
-        return second;
+        return gcd(second, first % second);
     }
 
 
