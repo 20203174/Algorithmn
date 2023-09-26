@@ -1,3 +1,4 @@
+package Algorithmn_java.0912;
 public class Main {
 
     private static final int[] TEST_CASES = {
@@ -39,8 +40,9 @@ public class Main {
         int max = 0;
         for (int i = 0; i < input.length; i++) {
             for (int j = i + 1; j < input.length - 1; j++) {
-                if (max < euclid(input[i], input[j]))
+                if (max < euclid(input[i], input[j])) {
                     max = euclid(input[i], input[j]);
+                }
             }
         }
         return max;
