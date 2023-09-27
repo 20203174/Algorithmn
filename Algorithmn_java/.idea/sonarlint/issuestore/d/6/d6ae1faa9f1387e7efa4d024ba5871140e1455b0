@@ -1,0 +1,6 @@
+
+ƒ
+java:S41658"aRemove this useless assignment; "big" already holds the assigned value along all execution paths.(àŠşôşÿÿÿÿ8¥ØÉÙ«1
+L	java:S106"+Replace this use of System.out by a logger.(â™àúÿÿÿÿ8§ØÉÙ«1
+F	java:S106"+Replace this use of System.out by a logger.(ĞÚ·(8§ØÉÙ«1
+]	java:S125""<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ8¨ØÉÙ«1

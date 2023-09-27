@@ -1,3 +1,5 @@
+package org.example._0906;
+
 public class Main {
 
     private static double correctCount = 0;

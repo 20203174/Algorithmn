@@ -1,3 +1,5 @@
+package org.example._0908;
+
 public class Main {
 
     public static int solution(int start, int end) {
