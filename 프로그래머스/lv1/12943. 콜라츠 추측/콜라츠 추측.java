@@ -1,28 +1,20 @@
 class Solution {
     public static int solution(int num) {
-        if(num == 1) {
-            return 0;
-        }
         int count = 0;
         long result = num;
-        do{
-            if(count >= 500) {
-                return -1;
-            }
-            result = recursion(result);
-            count++;
-            System.out.println(result);
-        } while (result != 1);
+        count = recursion(result, count);
 
         return count;
     }
 
-    public static long recursion(long inputNum) {
-        if (inputNum % 2 == 0) {
-            return inputNum / 2;
-        } else {
-            return (inputNum * 3 + 1);
+    public static int recursion(long inputNum, int count) {
+        if(inputNum == 1) {
+            return count;
         }
+        if (count >= 500) {
+            return -1;
+        }
+        return (inputNum % 2  == 0)? recursion(inputNum/2, ++count) : recursion(inputNum *3 +1, ++count);
     }
 
 }
