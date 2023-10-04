@@ -19,11 +19,6 @@ public class Main {
         nE = Integer.parseInt(st.nextToken());
         visitArr = new boolean[nV + 1];
 
-        realGraph = new ArrayList[nV + 1];
-        for(int i = 1; i < nV + 1; i++) {
-            realGraph[i] = new ArrayList<Integer>();
-        }
-
 
         for(int i = 0; i < nE; i++) {
             st = new StringTokenizer(br.readLine());
